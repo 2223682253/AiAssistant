@@ -18,8 +18,7 @@ public class ChatSessionController {
     private ChatSessionRepository sessionRepository;
     @Autowired
     private ChatMessageRepository messageRepository;
-//12
-
+//gitTest
     @GetMapping("/get")
     public @ResponseBody ChatSession getSessionById(@RequestParam String id){
         Optional<ChatSession> session = sessionRepository.findById(id);
